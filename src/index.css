@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern DatePicker Styles */
+.react-datepicker-wrapper {
+  @apply w-full;
+}
+
+.react-datepicker {
+  @apply font-sans border-0 shadow-lg rounded-lg overflow-hidden;
+}
+
+.react-datepicker__header {
+  @apply bg-indigo-50 border-0 rounded-t-lg p-4;
+}
+
+.react-datepicker__current-month {
+  @apply text-gray-900 font-semibold mb-4;
+}
+
+.react-datepicker__day-name {
+  @apply text-gray-600 font-medium w-8 h-8 leading-8;
+}
+
+.react-datepicker__day {
+  @apply w-8 h-8 leading-8 rounded-full m-1 text-gray-700 hover:bg-indigo-50 transition-colors;
+}
+
+.react-datepicker__day--selected {
+  @apply bg-indigo-600 text-white hover:bg-indigo-700;
+}
+
+.react-datepicker__day--keyboard-selected {
+  @apply bg-indigo-100 text-indigo-600;
+}
+
+.react-datepicker__day--disabled {
+  @apply text-gray-300 hover:bg-transparent cursor-not-allowed;
+}
+
+/* React Select Styles */
+.react-select__control {
+  @apply border border-gray-300 rounded-lg shadow-sm hover:border-indigo-500;
+}
+
+.react-select__control--is-focused {
+  @apply border-indigo-500 ring-2 ring-indigo-200;
+}
+
+.react-select__menu {
+  @apply mt-1 border border-gray-200 rounded-lg shadow-lg bg-white z-50;
+}
+
+.react-select__option {
+  @apply px-3 py-2 hover:bg-indigo-50 cursor-pointer;
+}
+
+.react-select__option--is-selected {
+  @apply bg-indigo-600 text-white;
+}
+
+.react-select__multi-value {
+  @apply bg-indigo-50 rounded-full;
+}
+
+.react-select__multi-value__label {
+  @apply text-indigo-700 px-2 py-1;
+}
+
+.react-select__multi-value__remove {
+  @apply text-indigo-700 hover:text-indigo-900 hover:bg-indigo-100 rounded-full;
+}
